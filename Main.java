@@ -1,42 +1,62 @@
-/*
-The last time I visited [place], I ate [food]. It tasted [qualifer], so I chose to give it to [person_1]. Afterwards, I bought a new [item] and then sold it to [person_2]. [person_2] [feeling_1] it, so he would use it every [period_of_time] at [hour]. After finding out, I asked [person_2] for it back, and chose to give it to [person_1] who [feeling_2] it.
-*/
-
-
+import java.util.Scanner;
 
 public class Main {
 
    public static void main(String []args) {
-      System.out.println("Hello World");
-   }
-
-   String place1 = "XYZ";
-   String food1 = "XYZ";
-   String qualifer1 = "XYZ";
-   String person1 = "XYZ";
-   String item1 = "XYZ";
-   String person2 = "XYZ";
-   String feeling1 = "XYZ";
-   String periodOfTime1 = "XYZ";
-   String hour1 = "XYZ";
-   String feeling2 = "XYZ";
-
-   String sentence1 = "The last time I visited " + place1 + ", I ate " + food1;
-
-   String sentence2 = ;
 
    /*
-   String sentences 3-5 are examples and need to be completed.
+   The last time I visited [place], I ate [food]. It tasted [qualifer], so I chose to give it to [person1]. Afterwards, I bought a new [item] and then sold it to [person2]. [person2] [feeling1] it, so he would use it every [period_of_time] at [hour]. After finding out, I asked [person2] for it back, and chose to give it to [person1] who [action1] it.
    */
 
-   String sentence3 = "Today, I went to the " + place1 + " to " + verb1 +
-               " with my " + adjective1 + " friend!";
+   Scanner scan = new Scanner(System.in);
 
-   String sentence4 = "Today, I went to the " + place1 + " to " + verb1 +
-               " with my " + adjective1 + " friend!";
+   System.out.print("Enter a place: ");
+   String place1 = scan.nextLine();
 
-   String sentence5 = "Today, I went to the " + place1 + " to " + verb1 +
-               " with my " + adjective1 + " friend!";
+   System.out.print("Enter a food: ");
+   String food1 = scan.nextLine();
+
+   System.out.print("Enter a word describing the food's taste: ");
+   String qualifier1 = scan.nextLine();
+
+   System.out.print("Enter a person's name: ");
+   String person1 = scan.nextLine();
+
+   System.out.print("Enter an item: ");
+   String item1 = scan.nextLine();
+
+   System.out.print("Enter a second person's name: ");
+   String person2 = scan.nextLine();
+
+   System.out.print("Enter a past tense feeling (e.g., loved): ");
+   String feeling1 = scan.nextLine();
+
+   System.out.print("Enter a period of time (e.g., month): ");
+   String periodOfTime1 = scan.nextLine();
+
+   System.out.print("Enter an hour of the day: ");
+   String hour1 = scan.nextLine();
+
+   System.out.print("Enter a past tense verb (e.g., licked): ");
+   String action1 = scan.nextLine();
 
 
+
+   String sentence1 = "The last time I visited " + place1 + ", I ate a " + food1 + ".";
+
+   String sentence2 = "It tasted " + qualifier1 + ", so I chose to give it to " + person1 + ".";
+
+   String sentence3 = "Afterwards, I bought a new " + item1 + " and then sold it to " + person2 + ".";
+
+   String sentence4 = person2 + " " + feeling1 + " it, so he would use it every " + periodOfTime1 + " at " + hour1 + ".";
+
+   String sentence5 = "After finding out, I asked " + person2 + " for it back, and chose to give it to " + person1 + " who " + action1 + " it.";
+
+   System.out.println(sentence1);
+   System.out.println(sentence2);
+   System.out.println(sentence3);
+   System.out.println(sentence4);
+   System.out.println(sentence5);
+
+   }
 }
